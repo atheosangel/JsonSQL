@@ -263,7 +263,7 @@ var jsonsql = {
 			case 0: return result;
 			case 1: return result.splice(0,limit[0]);
 			//case 2: return result.splice(limit[0]-1,limit[1]);
-			case 2: return result.splice(((limit[0]==0) ? 0, limit[0]-1),limit[1]);
+			case 2: return result.splice(((limit[0]==0) ? 0 : limit[0]-1),limit[1]);
 		}
 	}
 	
